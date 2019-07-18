@@ -38,7 +38,9 @@ public class Home extends Base {
                         }).show();
             }
         });
-    this.setupCoffees();
+
+        if (coffeeList.isEmpty())
+            this.setupCoffees();
     }
 
     public void add(View v)
